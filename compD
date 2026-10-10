@@ -1,0 +1,221 @@
+
+
+
+ifort -mcmodel=medium -o dBtotRec18fMX -O3 dBtotRec18fMX.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdphasx_vx18P -O3 dphasx_vx18P.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdphasx_vx18X -O3 dphasx_vx18X.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+
+gfortran -mcmodel=medium -o xdphasx_vx18X -O3 dphasx_vx18X.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+gfortran -mcmodel=medium -Wl,--no-relax -o xdExExz18fMX -O3 dExExz18fMX.f   -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdphasx_vx18n -O3 dphasx_vx18n.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdByBxz18F -O3 dByBxz18F.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdedeBxz18fMX -O3 dedeBxz18fMX.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdJxBxz18fMX -O3 dJxBxz18fMX.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+gfortran -mcmodel=medium -o xdByBxz18fMX -O3 dByBxz18fMX.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdByBxz18fMX -O3 dByBxz18fMX.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+
+ifort -mcmodel=medium -shared-intel -o xvJxBl18LLaN -O3 vJxBl18LLaN.f
+
+
+ifort -mcmodel=medium -shared-intel -o xvJxBl17LLaN -O3 vJxBl17LLaN.f
+
+ifort -mcmodel=medium -o xdphasx_vx17n -O3 dphasx_vx17n.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdJxBxz17fMX -O3 dJxBxz17fMX.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdExByz17f1Xn -O3 dExByz17f1Xn.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdByBxz17f1Xn -O3 dByBxz17f1Xn.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+
+ifort -o xplot3D16data -ipo -O3 -no-prec-div -fp-model fast=2 -xHost -mcmodel=medium plot3D16data.f
+
+ifort -o xplot3D11data -ipo -O3 -no-prec-div -fp-model fast=2 -xHost -mcmodel=medium plot3D11data.f
+
+June 2, 2021
+
+ifort -mcmodel=medium -shared-intel -o xplot3D16data plot3D16data.f
+
+ifort -fast -mcmodel=medium -shared-intel -o xplot3D16data plot3D16data.f
+
+ifort -fast -mcmodel=medium -shared-intel -o xplot3D11data plot3D11data.f
+
+
+----------------
+
+ifort -mcmodel=medium -shared-intel -o xvJxBl18LLaN -O3 vJxBl18LLaN.f
+
+ifort -mcmodel=medium -shared-intel -o xvJxBl11LLaN -O3 vJxBl11LLaN.f
+
+ifort -mcmodel=medium -shared-intel -o xvJxBl11LLaS -O3 vJxBl11LLaS.f
+
+
+
+ifort -mcmodel=medium -shared-intel -o xvExJtLS -O3 vExJtLS.f
+
+ifort -mcmodel=medium -shared-intel -o xvExB11LLe -O3 vExB11LLe.f
+
+ifort -mcmodel=medium -shared-intel -o xvLoBl11LLa -O3 vLoBl11LLa.f
+
+ifort -mcmodel=medium -shared-intel -o xvJxBl11LLa -O3 vJxBl11LLa.f
+
+ifort -mcmodel=medium -shared-intel -o xvLorBlE11LL -O3 vLorBlE11LL.f
+
+ifort -mcmodel=medium -shared-intel -o xvJxBliX11LL -O3 vJxBliX11LL.f
+
+ifort -mcmodel=medium -shared-intel -o xvisJxBliX11L -O3 visJxBliX11L.f
+
+ifort -mcmodel=medium -shared-intel -o xvLorBlinE11L -O3 vLorBlinE11L.f
+
+ifort -mcmodel=medium -shared-intel -o xvLorBlinE11s -O3 vLorBlinE11s.f
+
+ifort -mcmodel=medium -shared-intel -o xvisJxBliX11s -O3 visJxBliX11s.f
+
+ifort -mcmodel=medium -shared-intel -o xplot3D11data -fast plot3D11data.f
+
+ifort -mcmodel=medium -shared-intel -o xplot3D11data -O3 plot3D11data.f
+
+ifort -O3 -o xplot3D16data -shared-intel -mcmodel=medium plot3D16data.f
+
+ifort -O3 -o xplot3D11data -shared-intel -mcmodel=large plot3D11data.f
+
+On Frontera
+
+
+ifort -mcmodel=medium -o xdByBxz17f1X -O3 dByBxz17f1X.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdphasx_vx11ns -O3 dphasx_vx11ns.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdphasx_vx11n -O3 dphasx_vx11n.f  -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+
+    export PATH=/usr/bin:$PATH
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz16fMXn -O3 dByBxz16fMXn.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz16fMX -O3 dByBxz16fMX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz11fMX -O3 dByBxz11fMX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExBxz11fMX -O3 dExBxz11fMX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdpx_vx11P -O3 dpx_vx11P.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdpx_vx11Pn -O3 dpx_vx11Pn.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+By Johnny
+
+
+Modified for Frontera 
+
+ifort -Wl,--no-relax  -mcmodel=medium -o xdJxBxz16fMX -O3 dJxBxz16fMX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -Wl,--no-relax  -mcmodel=medium -o xdBtotByz11MF -O3 dBtotByz11MF.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -Wl,--no-relax  -mcmodel=medium -o xdByBxz16 -O3 dByBxz16.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz11fMX -O3 dByBxz11fMX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExExz11fS -O3 dExExz11fS.f --L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz11fS -O3 dByBxz11fS.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdedeBxz11fMX -O3 dedeBxz11fMX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz11f1X -O3 dByBxz11f1X.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdpvxvy11 -O3 dpvxvy11.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExByz11MFine -O3 dExByz11MFine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdJxBxz11Xnew -O3 dJxBxz11Xnew.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdJtBxz11Fine -O3 dJtBxz11Fine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdBtBxz11Fine -O3 dBtBxz11Fine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdBtotByz11MFine -O3 dBtotByz11MFine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExByz16MFine -O3 dExByz16MFine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExByz11MFine -O3 dExByz11MFine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdjxByz11MFine -O3 djxByz11MFine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz16Fine -O3 dByBxz16Fine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz11Fine -O3 dByBxz11Fine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExBxz16Fine -O3 dExBxz16Fine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExBxz11Fine -O3 dExBxz11Fine.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdExBxz11q1X -O3 dExBxz11q1X.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdvelparHEG11S -O3 dvelparHEG11S.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdvelparHEG11 -O3 dvelparHEG11.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByBxz11q1X -O3 dByBxz11q1X.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdByExz11q1X -O3 dByExz11q1X.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdedeBxz11q1X -O3 dedeBxz11q1X.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdlorBxz11sE -O3 dlorBxz11sE.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdphasx_vx11j -O3 dphasx_vx11j.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdphasx_vx11n -O3 dphasx_vx11n.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdphasx_vz11ans -O3 dphasx_vz11ns.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdphasx_vz11n -O3 dphasx_vz11n.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdEBvecyz11LX -O3 dEBvecyz11LX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdjxByz11MX -O3 djxByz11MX.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort  -Wl,--no-relax -mcmodel=medium -o xdJxBxz11q1X -O3 dJxBxz11q1X.f -L$TACC_NCARG_LIB -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+---------------------
+ifort -mcmodel=medium -o xdjxByz11MX -O3 -check -g -traceback djxByz11MX.f -L/u/knishika/ncl/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdmjxemyz11MX -O3 -check -g -traceback dmjxemyz11MX.f -L/u/knishika/ncl/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdedeBxz11q1X -O3 -check -g -traceback dedeBxz11q1X.f -L/u/knishika/ncl/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdlorBxz11sP -O3 -check -g -traceback dlorBxz11sP.f -L/u/knishika/ncl/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdlorBxz11sP -O3 dlorBxz11sP.f -L/u/knishika/ncl/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdlorBxz11sE -O3 dlorBxz11sE.f -L/u/knishika/ncl/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -o xdphasx_vx11n -O3 dphasx_vx11n.f -L/u/knishika/ncl/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+
+-check -g -traceback
+
+
+
+
+   ----------------------
+ifort -mcmodel=medium -shared-intel -o xdlorBxz11sP -O3 dlorBxz11sP.f -L/nasa/spack/views/gcc-4.8/ncl/6.4.0/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -shared-intel -o xdlorBxz11sE -O3 dlorBxz11sE.f -L/nasa/spack/views/gcc-4.8/ncl/6.4.0/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -shared-intel -o xdphasx_vx11n -O3 dphasx_vx11n.f -L/nasa/spack/views/gcc-4.8/ncl/6.4.0/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
+
+ifort -mcmodel=medium -shared-intel -o xdedeBxz11q1X -O3 dedeBxz11q1X.f -L/nasa/spack/views/gcc-4.8/ncl/6.4.0/lib -lncarg -lncarg_gks -lncarg_c -lX11 -lXext -lgfortran -lcairo -lfreetype
